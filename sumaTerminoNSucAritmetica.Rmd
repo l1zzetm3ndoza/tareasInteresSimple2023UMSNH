@@ -1,0 +1,38 @@
+---
+title: "terminoNSucAritmetica"
+author: "Lizzet Mendoza Esteban"
+date: "2023-09-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Para la función de la suma, al término n, de la sucesión aritmética.
+
+```{r}
+#EJEMPLO:
+#Tomando en cuneta el ejecicio del curso:
+#Una persona pide prestado $5,000.00 y acuerda hacer 25 pagos parciales de $200.00, así como pagar 1.25% mensual de intereses sobre el saldo insoluto o adeudado en cada periodo.
+#indica calcular la suma de los intereses pagados durante la operación.
+
+#Usamos la formula: "La suma de los términos tn"  Sn=n/2(x1+xn)
+
+Sn <- function(x1, xn, n) {
+        n/2 *(x1 + xn)
+}
+
+#Evaluando:
+
+#n:son los pagos que realizaría
+#x1:total de intereses generados
+#xn:% de los intereses iniciales
+
+Sn(n = 25,
+   x1 = 62.50,
+   xn = 2.50)
+
+```
+
+Gracias.
