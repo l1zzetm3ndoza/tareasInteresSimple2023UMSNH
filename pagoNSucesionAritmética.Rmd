@@ -1,0 +1,52 @@
+---
+title: "pagoNSucesionAritmética"
+author: "Lizzet Mendoza Esteban"
+date: "2023-09-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Una persona adeuda $25,000.00 que pagará en 72 meses. La única condición que piden en el crédito es que el pago inicial X1 se incremente en $50 cada mes ¿Cuál será el monto de la mensualidad en el mes 72?
+
+Los datos que ya tiene son:
+saldo=$25,000.00
+meses=72
+incremento=50
+
+
+```{r}
+#Usando la Fórmula:  An=a+(n-1)d 
+An <- function(a, n, d) {
+        a + (n - 1)* d
+}
+
+#Evaluando 
+#n=72 queremos buscar el posisionamiento 72 de la progresion del incremento 
+
+An(a = 0, n = 72, d = 50)
+#An= es el onto de la mensualidad 72
+
+#----------------------------------------
+
+
+#Usamos la formula: "La suma de los términos tn"  Sn=n/2(x1+xn)
+
+Sn <- function(x1, xn, n) {
+        n/2 *(x1 + xn)
+}
+
+#Evaluando:
+
+
+
+Sn(n = 6,
+   x1 = 3550,
+   xn = 25)
+
+#Sn es lo que debera pagar 
+
+```
+
