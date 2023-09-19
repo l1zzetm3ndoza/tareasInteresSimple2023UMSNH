@@ -1,0 +1,32 @@
+---
+title: "sumaTerminoNSucAritmetica"
+author: "Lizzet Mendoza Esteban"
+date: "2023-09-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Para la función del término n de la sucesion aritmética:
+
+
+```{r}
+#Ejemplo:
+  
+#Tomanddo en cuenta que la prgresión de números 1,3,5,7...an
+#Cada término de esta progresion es obtenido al sumar 2 al término anterior.
+#Buscaremos n posicionamiento en esta sucesion.
+
+#Usando la Fórmula:  An=a+(n-1)d 
+An <- function(a, n, d) {
+        a + (n - 1)* d
+}
+
+#Evaluando 
+#n=6 suponiendo que queremos uscar el posisionamiento 6
+
+An(a = 2, n = 6, d = 3)
+```
+Gracias 
